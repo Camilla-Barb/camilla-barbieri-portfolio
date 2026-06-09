@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Camilla Barbieri | Frontend Engineer — React, Next.js, Accessibility",
   description:
     "Frontend Engineer with 4 years of experience delivering enterprise-scale digital platforms using React, Next.js, and TypeScript. Specialized in web accessibility, performance optimization, and scalable frontend architectures.",
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Camilla Barbieri | Frontend Engineer",
     description:
