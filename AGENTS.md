@@ -2,14 +2,14 @@
 
 ## Stack
 
-| Concern | Choice | Notes |
-|---|---|---|
-| Framework | Next.js 16.3.0-canary.46 (App Router) | Must match `@next/swc-darwin-arm64` for native builds on Apple Silicon |
-| Styling | Tailwind v4 + `tw-animate-css` | **No `tailwind.config.js`** — CSS-first via `@import "tailwindcss"` in `app/globals.css` |
-| UI library | shadcn/ui (Radix-Nova style) | icon: lucide, style: `radix-nova`, RSC: yes |
-| Animation | framer-motion | All section components are `"use client"` for animation hooks |
-| Path alias | `@/` → project root | e.g. `import { cn } from "@/lib/utils"` |
-| Lint | `eslint` (eslint-config-next core-web-vitals + typescript) | |
+| Concern    | Choice                                                     | Notes                                                                                    |
+| ---------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Framework  | Next.js 16.3.0-canary.46 (App Router)                      |
+| Styling    | Tailwind v4 + `tw-animate-css`                             | **No `tailwind.config.js`** — CSS-first via `@import "tailwindcss"` in `app/globals.css` |
+| UI library | shadcn/ui (Radix-Nova style)                               | icon: lucide, style: `radix-nova`, RSC: yes                                              |
+| Animation  | framer-motion                                              | All section components are `"use client"` for animation hooks                            |
+| Path alias | `@/` → project root                                        | e.g. `import { cn } from "@/lib/utils"`                                                  |
+| Lint       | `eslint` (eslint-config-next core-web-vitals + typescript) |                                                                                          |
 
 ## Commands
 
@@ -25,15 +25,15 @@ npm run lint    # eslint
 
 All content lives in `lib/data.ts`. Sections in `components/sections/`:
 
-| Section | Component | Key contents |
-|---|---|---|
-| Hero | `hero.tsx` | Name, role, tagline, specialty tags, social links, scroll indicator |
-| About | `about.tsx` | Bio, highlights grid |
-| Metrics | `metrics.tsx` | Animated counters (scroll-triggered) |
-| Projects | `projects.tsx` | 4 enterprise project cards with tags + metrics |
-| Skills | `skills.tsx` | 6 category groups with skill lists |
-| Workflow | `workflow.tsx` | 5-step timeline with connecting line |
-| Contact | `contact.tsx` | Availability, contact info, social buttons, footer |
+| Section  | Component      | Key contents                                                        |
+| -------- | -------------- | ------------------------------------------------------------------- |
+| Hero     | `hero.tsx`     | Name, role, tagline, specialty tags, social links, scroll indicator |
+| About    | `about.tsx`    | Bio, highlights grid                                                |
+| Metrics  | `metrics.tsx`  | Animated counters (scroll-triggered)                                |
+| Projects | `projects.tsx` | 4 enterprise project cards with tags + metrics                      |
+| Skills   | `skills.tsx`   | 6 category groups with skill lists                                  |
+| Workflow | `workflow.tsx` | 5-step timeline with connecting line                                |
+| Contact  | `contact.tsx`  | Availability, contact info, social buttons, footer                  |
 
 ## Conventions
 

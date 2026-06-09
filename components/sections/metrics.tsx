@@ -42,7 +42,7 @@ function Counter({
       className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 text-center"
     >
       <div className="mb-1 text-4xl font-bold tracking-tight md:text-5xl">
-        <span className="bg-gradient-to-r from-indigo-300 to-violet-300 bg-clip-text text-transparent">
+        <span className="bg-linear-to-r from-indigo-300 to-violet-300 bg-clip-text text-transparent">
           {count}
           {suffix}
         </span>
