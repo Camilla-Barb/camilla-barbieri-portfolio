@@ -48,12 +48,12 @@ export default function About() {
           >
             {personalInfo.bio}
           </motion.p>
-          <motion.div
+          <motion.ul
             variants={itemVariants}
             className="grid gap-4 sm:grid-cols-2"
           >
             {personalInfo.highlights.map((highlight) => (
-              <div
+              <li
                 key={highlight}
                 className="flex items-start gap-3 rounded-xl border border-zinc-800 bg-zinc-900/50 p-4"
               >
@@ -61,9 +61,9 @@ export default function About() {
                 <span className="text-sm leading-relaxed text-zinc-300">
                   {highlight}
                 </span>
-              </div>
+              </li>
             ))}
-          </motion.div>
+          </motion.ul>
         </motion.div>
       </div>
     </section>

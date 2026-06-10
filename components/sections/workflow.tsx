@@ -46,9 +46,9 @@ export default function Workflow() {
           className="relative mt-12"
         >
           <div className="absolute left-6 top-0 hidden h-full w-px bg-linear-to-b from-indigo-500 via-violet-500 to-transparent md:block" />
-          <div className="space-y-8 md:space-y-12">
+          <ol className="space-y-8 md:space-y-12">
             {workflowSteps.map((step) => (
-              <motion.div
+              <motion.li
                 key={step.number}
                 variants={stepVariants}
                 className="relative md:pl-16"
@@ -67,9 +67,9 @@ export default function Workflow() {
                     {step.description}
                   </p>
                 </div>
-              </motion.div>
+              </motion.li>
             ))}
-          </div>
+          </ol>
         </motion.div>
       </div>
     </section>

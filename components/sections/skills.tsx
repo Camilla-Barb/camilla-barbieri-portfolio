@@ -38,7 +38,7 @@ export default function Skills() {
           </h2>
         </motion.div>
 
-        <motion.div
+        <motion.ul
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -46,7 +46,7 @@ export default function Skills() {
           className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {skillGroups.map((group) => (
-            <motion.div
+            <motion.li
               key={group.category}
               variants={groupVariants}
               className="rounded-xl border border-zinc-800 bg-zinc-900/50 p-6"
@@ -65,9 +65,9 @@ export default function Skills() {
                   </li>
                 ))}
               </ul>
-            </motion.div>
+            </motion.li>
           ))}
-        </motion.div>
+        </motion.ul>
       </div>
     </section>
   );

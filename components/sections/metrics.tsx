@@ -73,7 +73,7 @@ export default function Metrics() {
             </span>
           </h2>
         </motion.div>
-        <motion.div
+        <motion.ul
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -81,7 +81,7 @@ export default function Metrics() {
           className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
         >
           {metrics.map((metric) => (
-            <motion.div
+            <motion.li
               key={metric.label}
               variants={{
                 hidden: { opacity: 0, y: 30 },
@@ -93,9 +93,9 @@ export default function Metrics() {
                 suffix={metric.suffix}
                 label={metric.label}
               />
-            </motion.div>
+            </motion.li>
           ))}
-        </motion.div>
+        </motion.ul>
       </div>
     </section>
   );

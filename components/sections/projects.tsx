@@ -39,7 +39,7 @@ export default function Projects() {
           </h2>
         </motion.div>
 
-        <motion.div
+        <motion.ul
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
@@ -47,7 +47,7 @@ export default function Projects() {
           className="mt-12 grid gap-6 md:grid-cols-2"
         >
           {projects.map((project) => (
-            <motion.article
+            <motion.li
               key={project.title}
               variants={cardVariants}
               className="group relative rounded-xl border border-zinc-800 bg-zinc-900/50 p-6 transition-colors hover:border-zinc-700 md:p-8"
@@ -66,24 +66,24 @@ export default function Projects() {
                 {project.description}
               </p>
 
-              <div className="mb-4 flex flex-wrap gap-2">
+              <ul className="mb-4 flex flex-wrap gap-2">
                 {project.tags.map((tag) => (
-                  <span
+                  <li
                     key={tag}
                     className="rounded-full border border-zinc-800 bg-zinc-950 px-2.5 py-0.5 text-xs text-zinc-500"
                   >
                     {tag}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
 
               <div className="inline-flex items-center gap-1.5 rounded-lg bg-indigo-950/50 px-3 py-1.5 text-xs font-medium text-indigo-300">
                 <span className="size-1.5 rounded-full bg-indigo-500" />
                 {project.metric}
               </div>
-            </motion.article>
+            </motion.li>
           ))}
-        </motion.div>
+        </motion.ul>
       </div>
     </section>
   );
