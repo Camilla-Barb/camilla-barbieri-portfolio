@@ -11,8 +11,6 @@ export const personalInfo = {
     "Performance-driven — Core Web Vitals, bundle optimization, architecture",
   ],
   location: "Italy",
-  email: "barbiericamilla99@gmail.com",
-  phone: "+39 342 7384514",
   social: {
     linkedin: "https://www.linkedin.com/in/camilla-barbieri-profile",
     github: "https://github.com/Camilla-Barb",

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowDown, Mail } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 import { personalInfo } from "@/lib/data";
 import { Button } from "@/components/ui/button";
 
@@ -104,11 +104,14 @@ export default function Hero() {
             </svg>
           </a>
           <a
-            href={`mailto:${personalInfo.email}`}
+            href="#contact"
             className="text-zinc-500 transition-colors hover:text-zinc-300"
-            aria-label="Email"
+            aria-label="Contact"
           >
-            <Mail className="size-5" />
+            <svg className="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
           </a>
         </motion.div>
       </div>
