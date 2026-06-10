@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import ScrollToTop from "@/components/scroll-to-top";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -47,6 +48,7 @@ export default function RootLayout({
         <main id="main" className="flex-1">
           {children}
         </main>
+        <ScrollToTop />
       </body>
     </html>
   );
